@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation by using java script</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="big-container">
+
+   
+    <div class="container">
+        <div class="left">
+        <h1>Register Yourself</h1>
+        <form action="message.html" id="myform" onsubmit="return validateForm()">
+            <div class="input-div">
+                <label for="username">Username</label>
+                <input type="text" name="myname" id="username">
+                <small id="E1">error</small>
+            </div>
+            <div class="input-div">
+                <label for="email">Email</label>
+                <input type="email" name="myemail" id="email">
+                <small id="E2">error</small>
+            </div>
+            <div class="input-div">
+                <label for="password">Password</label>
+                <input type="password" name="mypassword" id="password">
+                <small id="E3">error</small>
+            </div>
+            <div class="input-div">
+                <label for="conPwd">confirm Password</label>
+                <input type="password" name="myConPwd" id="conPwd">
+                <small id="E4">error</small>
+            </div>
+            <input type="submit" value=" submit now" id="submit">
+        </form>
+    </div>
+    <div class="right">
+        <img src="./img.jpg" alt="">
+    </div>
+
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
