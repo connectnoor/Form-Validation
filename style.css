@@ -93,14 +93,34 @@ label:hover {
     text-decoration: underline;
 }
 
-input {
+input{
     padding: 5px 10px;
     border-radius: 4px;
     border: 1px solid rgb(215, 215, 215);
-    
     /* box-shadow: 1px 1px 10px rgb(209, 209, 209) ; */
 }
+input:nth-child(3){
+    border: none;
+    outline: none;
+}
+#password, #conPwd{
+    border: none;
+    outline: none;
+    width: 94%;
 
+}
+#span{
+    border:  1px solid rgb(215, 215, 215);
+    display: flex;
+    border-radius: 4px;
+}
+#span > span{
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+}
+#span > span:hover{
+    color: red;
+}
 small {
     color: red;
     font-weight: 500;
